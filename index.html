@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BVCM to iCal</title>
+    <script src="lib/ics.min.js"></script>
+    <script src="lib/pdf.js"></script>
+    <script src="main.js"></script>
+    <style type="text/css">
+        th, td {
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+        #download{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>BVCM to iCal</h1>
+
+<h3>Upload hier je BVCM pdf:</h3>
+<fieldset>
+    <legend>Upload file</legend>
+    <input type="file" id="file"/>
+</fieldset>
+<br>
+<button id="download" disabled>Download iCal</button>
+<br>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>Datum</th>
+        <th>Dag</th>
+        <th>Taak</th>
+        <th>Start</th>
+        <th>Eind</th>
+        <th>Opmerking</th>
+    </tr>
+    <tbody id="tbody"></tbody>
+    </thead>
+</table>
+</body>
+</html>
